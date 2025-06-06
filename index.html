@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="bg-blue-500 min-h-screen p-4">
+  <main class="max-w-2xl mx-auto bg-white p-6 rounded shadow">
+    <h1 class="text-2xl mb-4 font-bold">Search User - GitHub</h1>
+
+    <section class="flex gap-2 mb-4 cont-form">
+      <input type="text" id="username" placeholder="Digite o nome de user" class="flex-1 px-2 py-4 rounded border">
+      <button onclick="buscarUsuario()" class="bg-blue-600 text-white px-4 py-2 rounded shadow">Buscar</button>
+    </section>
+
+    <section id="userInfo" class="mb-6 hidden">
+      <div class="flex items-center gap-4">
+        <img id="avatar" src="" alt="avatar" class="w-20 h-20 rounded rounded-full">
+        <div>
+          <h2 class="text-xl font-semibold" id="name"></h2>
+          <p id="bio" class="text-gray-600"></p>
+        </div> 
+      </div>
+    </section>
+
+    <section id="repos" class="space-y">
+
+    </section>
+
+  </main>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
+</body>
+</html>
